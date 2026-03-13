@@ -16,4 +16,32 @@
   font-weight: v.$mainweight;
   cursor: pointer;
   color: v.$grey500;
+
+  &:hover {
+    background-color: v.$orange;
+    color: v.$white;
+  }
+
+  &.active {
+    background-color: v.$grey500;
+    color: v.$white;
+  }
 }
+
+.btn-submit {
+  background-color: v.$orange;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  font-weight: v.$mainweight;
+  text-transform: uppercase;
+  padding: 15px;
+  letter-spacing: 2px;
+
+  &:hover {
+    background-color: v.$white;
+    color: black;
+    cursor: pointer;
+  }
+}
+
