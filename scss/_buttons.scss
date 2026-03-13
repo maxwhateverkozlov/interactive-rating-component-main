@@ -1,0 +1,19 @@
+@use 'variables' as v;
+
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.btn-rating {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: lighten(v.$grey900, 5%);
+  font-weight: v.$mainweight;
+  cursor: pointer;
+  color: v.$grey500;
+}
