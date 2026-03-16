@@ -20,9 +20,10 @@
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 100%, 100%);
 }
+
 .btn-rating.active {
-  background-color: hsl(217, 12%, 63%);
-  color: hsl(0, 100%, 100%);
+  background-color: hsl(0, 100%, 100%);
+  color: black;
 }
 
 .btn-submit {
@@ -39,6 +40,13 @@
   background-color: hsl(0, 100%, 100%);
   color: black;
   cursor: pointer;
+}
+
+.btn-rating, .btn-submit {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-rating:active, .btn-submit:active {
+  transform: scale(0.95);
 }
 
 .hidden {
@@ -142,6 +150,20 @@ h1 {
 p {
   color: hsl(217, 12%, 63%);
   font-weight: 400;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
 }
 
 /*# sourceMappingURL=main.css.map */

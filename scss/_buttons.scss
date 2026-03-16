@@ -22,11 +22,11 @@
     background-color: v.$orange;
     color: v.$white;
   }
+}
 
-  &.active {
-    background-color: v.$grey500;
-    color: v.$white;
-  }
+.btn-rating.active {
+  background-color: v.$white;
+  color: black;
 }
 
 .btn-submit {
@@ -43,6 +43,14 @@
     background-color: v.$white;
     color: black;
     cursor: pointer;
+  }
+}
+
+.btn-rating, .btn-submit {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:active {
+    transform: scale(0.95);
   }
 }
 
