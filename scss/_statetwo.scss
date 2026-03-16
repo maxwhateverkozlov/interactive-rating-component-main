@@ -1,0 +1,42 @@
+@use 'variables' as v;
+
+.hidden {
+  display: none !important; 
+}
+
+#thank-you-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    color: v.$white;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .desc {
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+.selected-result {
+  display: inline-block;
+  text-align: center;
+  background-color: lighten(v.$grey900, 5%);
+  text-align: center;
+  color: v.$orange;
+  font-weight: v.$secondaryweight;
+  font-size: 0.8rem;
+  padding: 9px;
+  border-radius: 20px;
+  width: 47%;
+  margin-top: 20px;
+}
+
+

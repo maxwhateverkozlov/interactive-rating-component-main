@@ -1,3 +1,147 @@
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 32px;
+  width: 100%;
+}
 
+.btn-rating {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(213, 19%, 23%);
+  font-weight: 700;
+  cursor: pointer;
+  color: hsl(217, 12%, 63%);
+}
+.btn-rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 100%, 100%);
+}
+.btn-rating.active {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 100%, 100%);
+}
+
+.btn-submit {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 25px;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px;
+  letter-spacing: 2px;
+}
+.btn-submit:hover {
+  background-color: hsl(0, 100%, 100%);
+  color: black;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#thank-you-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#thank-you-state h2 {
+  color: hsl(0, 100%, 100%);
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+#thank-you-state .desc {
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.selected-result {
+  display: inline-block;
+  text-align: center;
+  background-color: hsl(213, 19%, 23%);
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 9px;
+  border-radius: 20px;
+  width: 47%;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: hsl(213, 19%, 18%);
+  background: radial-gradient(circle at top, hsl(214, 19%, 24%) 0%, hsl(213, 19%, 18%));
+  padding: 24px;
+  border-radius: 30px;
+  max-width: 310px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.card #rating-state h1 {
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .card #rating-state .firststate {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 360px;
+    padding: 32px;
+  }
+}
+
+.state-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.star-container {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .star-container {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
+  color: hsl(0, 100%, 100%);
+  font-weight: 700;
+  size: 15px;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=main.css.map */

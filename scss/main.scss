@@ -1,0 +1,25 @@
+@use 'variables' as v;
+@use 'buttons';
+@use 'statetwo';
+@use 'layout';
+
+body {
+  margin: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: v.$grey950;
+  min-height: 100vh;
+  font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+  color: v.$white;
+  font-weight: v.$mainweight;
+  size: v.$font-size;
+}
+
+p {
+  color: v.$grey500;
+  font-weight: v.$secondaryweight;
+}
