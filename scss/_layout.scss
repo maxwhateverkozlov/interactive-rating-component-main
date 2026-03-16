@@ -15,6 +15,18 @@
   width: 90%;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 
+  #rating-state {
+    h1 {
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: 768px) { 
+      .firststate {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   @media (min-width: 768px) {
     max-width: 360px;
     padding: 32px;

@@ -1,6 +1,7 @@
 .rating-group {
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
   margin-bottom: 32px;
   width: 100%;
 }
@@ -49,10 +50,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+#thank-you-state h2 {
+  color: hsl(0, 100%, 100%);
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+#thank-you-state .desc {
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .selected-result {
-  align-self: center;
+  display: inline-block;
+  text-align: center;
   background-color: hsl(213, 19%, 23%);
   text-align: center;
   color: hsl(25, 97%, 53%);
@@ -61,6 +75,7 @@
   padding: 9px;
   border-radius: 20px;
   width: 47%;
+  margin-top: 20px;
 }
 
 .card {
@@ -71,6 +86,14 @@
   max-width: 310px;
   width: 90%;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.card #rating-state h1 {
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .card #rating-state .firststate {
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 768px) {
   .card {
@@ -114,10 +137,6 @@ h1 {
   color: hsl(0, 100%, 100%);
   font-weight: 700;
   size: 15px;
-}
-
-h2 {
-  color: hsl(0, 100%, 100%);
 }
 
 p {
